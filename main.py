@@ -12,7 +12,7 @@ is_paused_pressed = False
 rotation_angle = 0
 def browseFiles():
     global current_song
-    filename = filedialog.askopenfilename(filetypes=(("Text files","*.mp3"),))
+    filename = filedialog.askopenfilename(filetypes=(("Audio files","*.mp3"),))
     if filename:
         current_song = filename
 
