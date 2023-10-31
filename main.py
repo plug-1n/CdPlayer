@@ -63,17 +63,17 @@ cover = Image.open("cover.jpg")
 
 def update_label_rotation():
     global rotation_angle, tk_image
+    if is_playing:
+        rotated_cover = cover.rotate(rotation_angle)
+        covered_disk = ImageOps.fit(rotated_cover,disk.size, centering=(0.5,0.5))
+        covered_disk.putalpha(disk)
 
-    rotated_cover = cover.rotate(rotation_angle)
-    covered_disk = ImageOps.fit(rotated_cover,disk.size, centering=(0.5,0.5))
-    covered_disk.putalpha(disk)
+        tk_image = ImageTk.PhotoImage(covered_disk)
+        image_label.configure(image=tk_image)
 
-    tk_image = ImageTk.PhotoImage(covered_disk)
-    image_label.configure(image=tk_image)
+        rotation_angle = (rotation_angle - 1) % 360
 
-    rotation_angle = (rotation_angle + 10) % 360
-
-    root.after(100, update_label_rotation)
+    root.after(50, update_label_rotation)
 
 image_label = Label(root)
 image_label.pack()
