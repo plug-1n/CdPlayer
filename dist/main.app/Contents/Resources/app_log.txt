@@ -1,0 +1,26 @@
+DEBUG:root:Script started.
+DEBUG:root:Script started 1
+DEBUG:root:Script started 2 .
+DEBUG:root:Script started. 3
+DEBUG:root:Script started.
+DEBUG:root:Script started 1
+DEBUG:root:Script started 2 .
+DEBUG:root:Script started. 3
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 41 8192
+DEBUG:root:Script started. 4 
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 41 4
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'cHRM' 70 32
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 114 6284
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 41 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 62 4447
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 57 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 78 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 115 3952
+DEBUG:root:Script started. 5
