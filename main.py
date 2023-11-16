@@ -1,6 +1,6 @@
 import time
 import pygame
-from tkinter import filedialog, Tk, Label, LEFT, Listbox, PhotoImage, RIGHT
+from tkinter import filedialog, Tk, Label, LEFT, Listbox, PhotoImage, RIGHT, BOTTOM
 from tkinter import ttk
 from PIL import Image, ImageOps, ImageTk
 
@@ -101,16 +101,17 @@ image_label.pack()
 
 file_btn = ttk.Button(text="open", command=browseFiles)
 file_btn.pack()
-
+frameA = ttk.Frame(root,padding=20)
 start_icon = ImageTk.PhotoImage(Image.open("assets/play.png").resize(size=(btn_icon_size, btn_icon_size)))
 pause_icon = ImageTk.PhotoImage(Image.open("assets/pause.png").resize(size=(btn_icon_size, btn_icon_size)))
 stop_icon = ImageTk.PhotoImage(Image.open("assets/stop.png").resize(size=(btn_icon_size, btn_icon_size)))
-start_btn = ttk.Button(image=start_icon, command=play_song)
-start_btn.pack(side=LEFT, padx=20)
-pause_btn = ttk.Button(image=pause_icon, command=pause_song)
-pause_btn.pack(side=LEFT, padx=80)
-stop_btn = ttk.Button(image=stop_icon, command=stop_song)
-stop_btn.pack(side=RIGHT, padx=20)
+start_btn = ttk.Button(frameA,image=start_icon, command=play_song)
+start_btn.pack(side=LEFT,padx=5)
+pause_btn = ttk.Button(frameA,image=pause_icon, command=pause_song)
+pause_btn.pack(side=RIGHT,padx=5)
+stop_btn = ttk.Button(frameA,image=stop_icon, command=stop_song)
+stop_btn.pack(side=RIGHT, padx=5)
+frameA.pack()
 
 update_label_rotation()
 
